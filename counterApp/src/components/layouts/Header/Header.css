@@ -1,0 +1,214 @@
+
+header {
+    -webkit-box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.75);
+  }
+  header .header-top {
+    padding: 0 1rem 0 1rem;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .header-top img {
+    width: 100px;
+  }
+  header .header-top > div {
+    display: flex;
+    flex-direction: row;
+  }
+  header .header-top .header-top-button {
+    background-color: #f0f0f0;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 0 5px;
+  }
+  header .header-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    height: 4rem;
+  }
+  header .header-left {
+    margin: 0.5rem 1rem;
+  }
+  header .header-left .fbIconContainer {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  header .header-left .fbIconContainer .fbicon {
+    width: 40px;
+    height: 40px;
+  }
+  header .header-left .searchBar {
+    display: inline-block;
+    background-color: #f0f0f0;
+    border-radius: 1.5rem;
+    height: 3rem;
+    padding: 1rem;
+    width: 16rem;
+  }
+  header .header-left .searchBar i {
+    color: #a0a0a0;
+  }
+  header .header-left .searchBar input {
+    background-color: transparent;
+    border: 0px none transparent;
+    outline: none;
+  }
+  @media (0px <= width <= 600px) {
+    header .header-left .searchBar {
+      width: 50px;
+      border-radius: 50%;
+    }
+    header .header-left .searchBar input {
+      display: none;
+    }
+  }
+  @media (600px < width <= 900px) {
+    header .header-left .searchBar {
+      width: 50px;
+      border-radius: 50%;
+    }
+    header .header-left .searchBar input {
+      display: none;
+    }
+  }
+  header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .menu .buttonItem {
+    width: 80px;
+    cursor: pointer;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .menu .buttonItem:hover {
+    background-color: #f0f0f0;
+  }
+  header .menu .buttonItem i {
+    color: #a0a0a0;
+  }
+  header .menu input {
+    display: none;
+  }
+  header .menu input:checked + label div {
+    border-bottom: 3px solid #0866ff;
+  }
+  header .menu .button-item-selected {
+    border-bottom: 3px solid transparent;
+  }
+  header .navBarItem {
+    background-color: #f0f0f0;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+  }
+  header .navBarItem svg {
+    vertical-align: middle;
+    fill: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .navBarItem i {
+    vertical-align: middle;
+  }
+  header .navBarItem .notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  header .navBarItem .notification p {
+    color: white;
+    font-weight: bold;
+    font-size: 0.5rem;
+    vertical-align: middle;
+    margin: 0px auto;
+  }
+  header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  header .navBarMore {
+    background-color: #f0f0f0;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+  header .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  @media (0px <= width <= 600px) {
+    header .header-top {
+      display: flex;
+    }
+    header .header-bottom {
+      padding-top: 0;
+    }
+    header .header-left {
+      display: none;
+    }
+    header .navBarMore {
+      display: none;
+    }
+    header .menu {
+      width: 100%;
+    }
+  }
+  @media (0px <= width <= 600px) {
+    header .navbar {
+      display: none;
+    }
+    header .navBarMore {
+      display: flex;
+    }
+  }
+  @media (600px < width <= 900px) {
+    header .navbar {
+      display: none;
+    }
+    header .navBarMore {
+      display: flex;
+    }
+  }
+  
+
+  
